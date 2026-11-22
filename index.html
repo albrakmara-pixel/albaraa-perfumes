@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض البراء للعطور الفاخرة</title>
+    <style>
+        :root {
+            --bg-dark: #141414;
+            --card-bg: #1f1f1f;
+            --gold: #d4af37;
+            --gold-light: #f3e5ab;
+            --cream: #f5efe6;
+            --text-muted: #b0a89e;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-dark);
+            color: var(--cream);
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(180deg, #0a0a0a 0%, var(--bg-dark) 100%);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        header h1 {
+            color: var(--gold);
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            color: var(--gold-light);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        /* لوحة تناسق الألوان */
+        .palette-section {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .palette-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .color-box {
+            width: 130px;
+            padding: 15px 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        /* شبكة العطور */
+        .perfumes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 25px;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.15);
+        }
+        .bottle-art {
+            width: 160px;
+            height: 200px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card h3 {
+            color: var(--gold);
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+        .notes {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        footer span {
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مجموعة البراء للعطور الفاخرة</h1>
+        <p>معرض أعمال لتصميم الهوية البصرية وتناسق الألوان لمجموعة عطور شرقية وعصرية مستوحاة من الفخامة والأصالة.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- قسم تناسق الألوان -->
+        <section class="palette-section">
+            <h2 style="color: var(--gold); margin-bottom: 10px;">الهوية البصرية وتناسق الألوان</h2>
+            <p style="color: var(--text-muted);">تم اختيار لوحة ألوان تعكس الدفء والفخامة وتتناغم مع المكونات العطرية</p>
+            <div class="palette-grid">
+                <div class="color-box" style="background-color: #141414; color: #f5efe6;">أسود فحمي<br>#141414</div>
+                <div class="color-box" style="background-color: #d4af37; color: #141414;">ذهبي ملكي<br>#D4AF37</div>
+                <div class="color-box" style="background-color: #5c2c16; color: #f5efe6;">عنبر دافئ<br>#5C2C16</div>
+                <div class="color-box" style="background-color: #f5efe6; color: #141414;">بيج كريمي<br>#F5EFE6</div>
+            </div>
+        </section>
+
+        <!-- قسم معرض العطور -->
+        <h2 class="section-title">تصاميم المجموعة العطرية</h2>
+        <div class="perfumes-grid">
+            
+            <!-- العطر الأول -->
+            <div class="card">
+                <div class="bottle-art">
+                    <svg width="140" height="190" viewBox="0 0 140 190">
+                        <rect x="52" y="15" width="36" height="25" rx="4" fill="#d4af37"/>
+                        <rect x="60" y="40" width="20" height="15" fill="#b59226"/>
+                        <rect x="30" y="55" width="80" height="115" rx="15" fill="#2c1608" stroke="#d4af37" stroke-width="3"/>
+                        <rect x="42" y="85" width="56" height="55" rx="5" fill="#f5efe6"/>
+                        <text x="70" y="110" font-size="11" font-weight="bold" fill="#141414" text-anchor="middle">عود ملكي</text>
+                        <text x="70" y="126" font-size="8" fill="#5c2c16" text-anchor="middle">ROYAL OUD</text>
+                    </svg>
+                </div>
+                <h3>عطر عود ملكي</h3>
+                <span class="notes">عود كمبودي • زعفران • عنبر</span>
+                <p>تصميم زجاجة داكنة بلمسات ذهبية تعبر عن عمق العود الشرقي وثباته العالي في المناسبات المسائية.</p>
+            </div>
+
+            <!-- العطر الثاني -->
+            <div class="card">
+                <div class="bottle-art">
+                    <svg width="140" height="190" viewBox="0 0 140 190">
+                        <circle cx="70" cy="28" r="16" fill="#d4af37"/>
+                        <rect x="62" y="42" width="16" height="14" fill="#b59226"/>
+                        <path d="M35 65 Q70 50 105 65 L100 170 Q70 180 40 170 Z" fill="#8c4a27" stroke="#f3e5ab" stroke-width="2.5"/>
+                        <circle cx="70" cy="115" r="26" fill="#141414" stroke="#d4af37" stroke-width="2"/>
+                        <text x="70" y="114" font-size="10" font-weight="bold" fill="#d4af37" text-anchor="middle">سحر العنبر</text>
+                        <text x="70" y="127" font-size="7" fill="#f5efe6" text-anchor="middle">AMBER ELIXIR</text>
+                    </svg>
+                </div>
+                <h3>عطر سحر العنبر</h3>
+                <span class="notes">فانيليا • خشب الصندل • مسك</span>
+                <p>تدرجات لونية دافئة تجمع بين البني الكهرماني والذهبي الفاتح لتعكس نعومة الفانيليا ودفء العنبر.</p>
+            </div>
+
+            <!-- العطر الثالث -->
+            <div class="card">
+                <div class="bottle-art">
+                    <svg width="140" height="190" viewBox="0 0 140 190">
+                        <rect x="48" y="18" width="44" height="22" rx="2" fill="#141414" stroke="#d4af37" stroke-width="2"/>
+                        <rect x="63" y="40" width="14" height="15" fill="#d4af37"/>
+                        <rect x="25" y="55" width="90" height="110" rx="8" fill="#e6d5b8" stroke="#d4af37" stroke-width="3"/>
+                        <rect x="38" y="80" width="64" height="60" fill="#141414"/>
+                        <text x="70" y="108" font-size="11" font-weight="bold" fill="#d4af37" text-anchor="middle">نسمة مسك</text>
+                        <text x="70" y="124" font-size="8" fill="#f5efe6" text-anchor="middle">PURE MUSK</text>
+                    </svg>
+                </div>
+                <h3>عطر نسمة مسك</h3>
+                <span class="notes">مسك أبيض • ياسمين • برغموت</span>
+                <p>تباين أنيق بين اللون الكريمي الفاتح والأسود لإبراز نقاء المسك الأبيض وانتعاش الحمضيات.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>تصميم وتنفيذ: <span>البراء عثمان كمارا</span> | الرقم الجامعي: <span>130351</span></p>
+        <p style="margin-top: 5px;">للتواصل: 0592192541 | albrakmara@gmail.com</p>
+    </footer>
+
+</body>
+</html>
